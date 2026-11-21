@@ -41,7 +41,7 @@ What the numbers say:
 - **Lower drawdowns are not alpha.** The agent's drawdowns are smaller than buy and hold's -52.8%, but only because it is mostly out of the market; its median Sharpe is still lower.
 - **The MA21 filter hurts here.** It cuts drawdowns further but exits too often in a trending stock.
 
-Prices are unadjusted, so dividends are ignored for both the agent and buy and hold.
+Prices are unadjusted, so dividends are ignored for both the agent and buy and hold. The results above were produced from the original 2024 data cache (tsanghi.com, 3,155 daily bars), which is not redistributed here. `src/data.py` downloads the same fields (unadjusted daily OHLCV) from BaoStock, so a rerun can differ slightly if the two sources disagree on a day.
 
 ![Indicators, 2022](figures/indicators_2022.png)
 
